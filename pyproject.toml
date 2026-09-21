@@ -1,0 +1,15 @@
+[project]
+name = "oas-dbc-tools"
+version = "0.1.0"
+description = "Validation tooling for OAS DBC data"
+requires-python = ">=3.12"
+license = { text = "Apache-2.0" }
+
+[dependency-groups]
+dev = ["pytest>=8.0", "pyright>=1.1", "ruff>=0.9"]
+
+[tool.ruff]
+target-version = "py312"
+
+[tool.pyright]
+include = ["tools", "tests"]

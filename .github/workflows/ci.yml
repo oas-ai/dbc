@@ -1,0 +1,10 @@
+name: CI
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  dbc:
+    uses: oas-ai/.github/.github/workflows/dbc-ci.yml@main
