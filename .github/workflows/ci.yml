@@ -6,5 +6,9 @@ on:
 permissions:
   contents: read
 jobs:
+  license:
+    uses: oas-ai/.github/.github/workflows/license-check.yml@main
   dbc:
     uses: oas-ai/.github/.github/workflows/dbc-ci.yml@main
+    with:
+      validation-command: uv run --group dev python tools/validate.py
