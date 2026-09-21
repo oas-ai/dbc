@@ -1,0 +1,7 @@
+platform_id: GENESIS_G80
+source_id: https://github.com/commaai/opendbc/blob/ba800b77187208286f39c22f692ac7c69e9324f2/opendbc/dbc/generator/hyundai/hyundai_can.dbc
+license_status: approved
+derived_files:
+  - path: vehicles/genesis/g80-2017/hyundai_can.dbc
+    sha256: 41deaf3142e86b6928f0f89fb968a710dae74ced5dbf47c897bc8c69cd2108ba
+reviewed_at: "2026-09-22"

@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- Add the MIT-licensed comma Body DBC as a provenance-tracked read-only sample.
+- Add the MIT-licensed Genesis G80 2017 Hyundai legacy CAN DBC as a provenance-tracked read-only sample.
 
 ## [0.1.0] - 2026-09-21
 
