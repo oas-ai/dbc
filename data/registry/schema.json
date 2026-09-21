@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OAS DBC provenance manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "platform_id",
+    "source_id",
+    "license_status",
+    "derived_files",
+    "reviewed_at"
+  ],
+  "properties": {
+    "platform_id": {
+      "type": "string",
+      "pattern": "^[A-Z0-9]+_[A-Z0-9]+$"
+    },
+    "source_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "license_status": {
+      "type": "string",
+      "enum": ["pending", "approved", "restricted"]
+    },
+    "derived_files": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "sha256"],
+        "properties": {
+          "path": {
+            "type": "string",
+            "pattern": "^vehicles/[a-z0-9-]+/[a-z0-9-]+/.+\\.dbc$"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        }
+      }
+    },
+    "reviewed_at": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

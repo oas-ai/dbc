@@ -12,7 +12,7 @@ DBC는 차량 제어·안전과 연결될 수 있는 외부 데이터다. 출처
 
 승인된 원본은 `data/raw/`에 저장하지 않는다. 원본 보관 위치와 접근 권한은 별도 보안 절차로 관리한다. Git에 반입 가능한 파생 DBC는 `data/vehicles/<manufacturer>/<platform>/`에 둔다.
 
-각 반입에는 `data/registry/<platform>.yaml` manifest를 추가한다. manifest에는 원본 식별자, SHA-256, 권한 상태, 검토자, 파생 파일 경로를 포함한다. SHA-256은 원본 또는 승인된 파생본이 바뀔 때마다 갱신한다.
+각 반입에는 `data/registry/<platform>.yaml` manifest를 추가한다. manifest에는 원본 식별자, SHA-256, 권한 상태, 검토일, 파생 파일 경로를 포함한다. [schema.json](../data/registry/schema.json)이 manifest 형식을 강제하며, SHA-256은 승인된 파생본이 바뀔 때마다 갱신한다.
 
 ## 3. 자동 검증
 
