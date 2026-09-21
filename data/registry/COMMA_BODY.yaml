@@ -1,0 +1,7 @@
+platform_id: COMMA_BODY
+source_id: https://github.com/commaai/opendbc/blob/ba800b77187208286f39c22f692ac7c69e9324f2/opendbc/dbc/comma_body.dbc
+license_status: approved
+derived_files:
+  - path: vehicles/comma/body/comma_body.dbc
+    sha256: 9040592f1138f0110224c2acd781edbfb32d032cecb86ca8ec6356ec961b35ce
+reviewed_at: "2026-09-22"
