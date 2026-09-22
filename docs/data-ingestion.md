@@ -22,6 +22,9 @@ Pull Request에서는 `uv run --group dev python tools/validate.py`를 실행한
 
 DBC의 signal은 곧바로 OAS API가 되지 않는다. `DBC → CAN Parser → Manufacturer Adapter → OAS Canonical Model` 경계를 유지한다. Vehicle Control 또는 Safety와 연관된 signal은 별도의 Safety review와 실제 log 기반 검증이 필요하다.
 
+Hyundai Palisade 2020의 현재 raw diagnostics 범위는 DBC provenance를 신뢰하되, 실차 확보 뒤
+[capture validation](palisade-2020-capture-validation.md) 절차로 관찰 근거를 추가한다.
+
 ## 5. 승인과 변경
 
 PR에는 provenance manifest, validation 결과, 영향을 받는 Adapter/문서를 포함한다. 기존 signal의 이름·scale·offset·enum을 변경하면 compatibility 영향과 migration 계획을 기록한다.
