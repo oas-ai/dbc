@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Treat the provenance-pinned Palisade DBC as the current signal specification for read-only raw diagnostics pending vehicle captures.
 - Add the MIT-licensed Hyundai Palisade 2020 Hyundai legacy CAN DBC as a provenance-tracked read-only sample.
 
 ## [0.1.0] - 2026-09-21
