@@ -7,12 +7,12 @@ import jsonschema
 def test_registry_schema_accepts_a_valid_manifest() -> None:
     schema = json.loads(Path("data/registry/schema.json").read_text(encoding="utf-8"))
     manifest = {
-        "platform_id": "GENESIS_RG3",
+        "platform_id": "HYUNDAI_PALISADE",
         "source_id": "approved-source-reference",
         "license_status": "approved",
         "derived_files": [
             {
-                "path": "vehicles/genesis/rg3/example.dbc",
+                "path": "vehicles/hyundai/palisade-2020/example.dbc",
                 "sha256": "0" * 64,
             }
         ],
