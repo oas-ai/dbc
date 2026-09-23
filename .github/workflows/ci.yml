@@ -14,4 +14,4 @@ jobs:
   dbc:
     uses: oas-ai/.github/.github/workflows/dbc-ci.yml@main
     with:
-      validation-command: uv run --group dev python tools/validate.py
+      validation-command: uv run --group dev python tools/validate.py && uv run --group dev python -m unittest discover -s tools -p 'test_*.py'
